@@ -100,8 +100,8 @@
 				C833D6F5212843F0000D340D /* AppDelegate.swift */,
 				C833D6F7212843F0000D340D /* ViewController.swift */,
 				C833D6F9212843F0000D340D /* Main.storyboard */,
-				C833D6FC212843F1000D340D /* Assets.xcassets */,
 				C833D6FE212843F1000D340D /* LaunchScreen.storyboard */,
+				C833D6FC212843F1000D340D /* Assets.xcassets */,
 				C833D701212843F1000D340D /* Info.plist */,
 			);
 			path = SanaSummerHomeworkApp;
