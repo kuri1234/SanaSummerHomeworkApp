@@ -24,14 +24,14 @@ class ViewController: UIViewController {
         buttonMath2.setTitle(strDone, for: .normal)
         buttonMath2.setTitleColor(UIColor.black, for: .normal)
         
-        buttonMath3.backgroundColor = UIColor.red
-        buttonMath3.setTitle(strNotYet, for: .normal)
-        buttonMath3.setTitleColor(UIColor.white, for: .normal)
-
-        buttonMath4.backgroundColor = UIColor.red
-        buttonMath4.setTitle(strNotYet, for: .normal)
-        buttonMath4.setTitleColor(UIColor.white, for: .normal)
-
+        buttonMath3.backgroundColor = UIColor.white
+        buttonMath3.setTitle(strDone, for: .normal)
+        buttonMath3.setTitleColor(UIColor.black, for: .normal)
+        
+        buttonMath4.backgroundColor = UIColor.white
+        buttonMath4.setTitle(strDone, for: .normal)
+        buttonMath4.setTitleColor(UIColor.black, for: .normal)
+        
         buttonMath5.backgroundColor = UIColor.white
         buttonMath5.setTitle(strDone, for: .normal)
         buttonMath5.setTitleColor(UIColor.black, for: .normal)
@@ -52,11 +52,11 @@ class ViewController: UIViewController {
         buttonMath9.setTitle(strDone, for: .normal)
         buttonMath9.setTitleColor(UIColor.black, for: .normal)
 
-        buttonMath10.backgroundColor = UIColor.red
+        buttonMath10.backgroundColor = UIColor.blue
         buttonMath10.setTitle(strNotYet, for: .normal)
         buttonMath10.setTitleColor(UIColor.white, for: .normal)
         
-        buttonMath11.backgroundColor = UIColor.red
+        buttonMath11.backgroundColor = UIColor.blue
         buttonMath11.setTitle(strNotYet, for: .normal)
         buttonMath11.setTitleColor(UIColor.white, for: .normal)
 
@@ -100,15 +100,15 @@ class ViewController: UIViewController {
         buttonJap5.setTitle(strNotYet, for: .normal)
         buttonJap5.setTitleColor(UIColor.white, for: .normal)
 
-        buttonJap6.backgroundColor = UIColor.red
+        buttonJap6.backgroundColor = UIColor.blue
         buttonJap6.setTitle(strNotYet, for: .normal)
         buttonJap6.setTitleColor(UIColor.white, for: .normal)
         
-        buttonJap7.backgroundColor = UIColor.red
+        buttonJap7.backgroundColor = UIColor.blue
         buttonJap7.setTitle(strNotYet, for: .normal)
         buttonJap7.setTitleColor(UIColor.white, for: .normal)
         
-        buttonJap8.backgroundColor = UIColor.red
+        buttonJap8.backgroundColor = UIColor.blue
         buttonJap8.setTitle(strNotYet, for: .normal)
         buttonJap8.setTitleColor(UIColor.white, for: .normal)
         
@@ -124,7 +124,7 @@ class ViewController: UIViewController {
         buttonJap11.setTitle(strDone, for: .normal)
         buttonJap11.setTitleColor(UIColor.black, for: .normal)
         
-        buttonJap12.backgroundColor = UIColor.red
+        buttonJap12.backgroundColor = UIColor.blue
         buttonJap12.setTitle(strNotYet, for: .normal)
         buttonJap12.setTitleColor(UIColor.white, for: .normal)
         
@@ -158,22 +158,22 @@ class ViewController: UIViewController {
     
     func countMath() {
         var i=0
-        if  (ButtonMath1.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonMath2.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonMath3.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonMath4.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonMath5.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonMath6.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonMath7.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonMath8.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonMath9.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonMath10.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonMath11.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonMath12.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonMath13.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonMath14.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonMath15.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonMath16.backgroundColor == UIColor.red ) { i+=1 }
+        if  (ButtonMath1.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonMath2.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonMath3.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonMath4.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonMath5.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonMath6.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonMath7.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonMath8.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonMath9.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonMath10.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonMath11.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonMath12.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonMath13.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonMath14.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonMath15.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonMath16.backgroundColor != UIColor.white ) { i+=1 }
         labelCountMath.text = String(i)
     }
     
@@ -320,12 +320,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonMath10: UIButton!
     
     @IBAction func bPressMath10(_ sender: Any) {
-        if  (buttonMath10.backgroundColor == UIColor.red ) {
+        if  (buttonMath10.backgroundColor == UIColor.blue ) {
             buttonMath10.backgroundColor = UIColor.white
             buttonMath10.setTitle(strDone, for: .normal)
             buttonMath10.setTitleColor(UIColor.black, for: .normal)
         } else {
-            buttonMath10.backgroundColor = UIColor.red
+            buttonMath10.backgroundColor = UIColor.blue
             buttonMath10.setTitle(strNotYet, for: .normal)
             buttonMath10.setTitleColor(UIColor.white, for: .normal)
         }
@@ -335,12 +335,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonMath11: UIButton!
     
     @IBAction func bPressMath11(_ sender: Any) {
-        if  (buttonMath11.backgroundColor == UIColor.red ) {
+        if  (buttonMath11.backgroundColor == UIColor.blue ) {
             buttonMath11.backgroundColor = UIColor.white
             buttonMath11.setTitle(strDone, for: .normal)
             buttonMath11.setTitleColor(UIColor.black, for: .normal)
         } else {
-            buttonMath11.backgroundColor = UIColor.red
+            buttonMath11.backgroundColor = UIColor.blue
             buttonMath11.setTitle(strNotYet, for: .normal)
             buttonMath11.setTitleColor(UIColor.white, for: .normal)
         }
@@ -426,22 +426,22 @@ class ViewController: UIViewController {
     
     func countJap() {
         var i=0
-        if  (buttonJap1.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonJap2.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonJap3.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonJap4.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonJap5.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonJap6.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonJap7.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonJap8.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonJap9.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonJap10.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonJap11.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonJap12.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonJap13.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonJap14.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonJap15.backgroundColor == UIColor.red ) { i+=1 }
-        if  (buttonJap16.backgroundColor == UIColor.red ) { i+=1 }
+        if  (buttonJap1.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonJap2.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonJap3.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonJap4.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonJap5.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonJap6.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonJap7.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonJap8.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonJap9.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonJap10.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonJap11.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonJap12.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonJap13.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonJap14.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonJap15.backgroundColor != UIColor.white ) { i+=1 }
+        if  (buttonJap16.backgroundColor != UIColor.white ) { i+=1 }
         labelCountJap.text = String(i)
     }
     
@@ -527,12 +527,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonJap6: UIButton!
     
     @IBAction func bPressJap6(_ sender: Any) {
-        if  (buttonJap6.backgroundColor == UIColor.red ) {
+        if  (buttonJap6.backgroundColor == UIColor.blue ) {
             buttonJap6.backgroundColor = UIColor.white
             buttonJap6.setTitle(strDone, for: .normal)
             buttonJap6.setTitleColor(UIColor.black, for: .normal)
         } else {
-            buttonJap6.backgroundColor = UIColor.red
+            buttonJap6.backgroundColor = UIColor.blue
             buttonJap6.setTitle(strNotYet, for: .normal)
             buttonJap6.setTitleColor(UIColor.white, for: .normal)
         }
@@ -542,12 +542,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonJap7: UIButton!
     
     @IBAction func bPressJap7(_ sender: Any) {
-        if  (buttonJap7.backgroundColor == UIColor.red ) {
+        if  (buttonJap7.backgroundColor == UIColor.blue ) {
             buttonJap7.backgroundColor = UIColor.white
             buttonJap7.setTitle(strDone, for: .normal)
             buttonJap7.setTitleColor(UIColor.black, for: .normal)
         } else {
-            buttonJap7.backgroundColor = UIColor.red
+            buttonJap7.backgroundColor = UIColor.blue
             buttonJap7.setTitle(strNotYet, for: .normal)
             buttonJap7.setTitleColor(UIColor.white, for: .normal)
         }
@@ -557,12 +557,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonJap8: UIButton!
     
     @IBAction func bPressJap8(_ sender: Any) {
-        if  (buttonJap8.backgroundColor == UIColor.red ) {
+        if  (buttonJap8.backgroundColor == UIColor.blue ) {
             buttonJap8.backgroundColor = UIColor.white
             buttonJap8.setTitle(strDone, for: .normal)
             buttonJap8.setTitleColor(UIColor.black, for: .normal)
         } else {
-            buttonJap8.backgroundColor = UIColor.red
+            buttonJap8.backgroundColor = UIColor.blue
             buttonJap8.setTitle(strNotYet, for: .normal)
             buttonJap8.setTitleColor(UIColor.white, for: .normal)
         }
@@ -617,12 +617,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonJap12: UIButton!
     
     @IBAction func bPressJap12(_ sender: Any) {
-        if  (buttonJap12.backgroundColor == UIColor.red ) {
+        if  (buttonJap12.backgroundColor == UIColor.blue ) {
             buttonJap12.backgroundColor = UIColor.white
             buttonJap12.setTitle(strDone, for: .normal)
             buttonJap12.setTitleColor(UIColor.black, for: .normal)
         } else {
-            buttonJap12.backgroundColor = UIColor.red
+            buttonJap12.backgroundColor = UIColor.blue
             buttonJap12.setTitle(strNotYet, for: .normal)
             buttonJap12.setTitleColor(UIColor.white, for: .normal)
         }
